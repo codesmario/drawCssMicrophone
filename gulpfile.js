@@ -5,7 +5,7 @@ var sass = require('gulp-sass');
 var uglifycss = require('gulp-uglifycss');
 // -------------------------------------
 gulp.task('sass', () => {
-    return gulp.src('./resources/sass/**/*.scss')
+    return gulp.src('./resources/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(uglifycss())
     .pipe(gulp.dest('./public/css'));
